@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="header">
@@ -19,16 +20,21 @@
       </div>
       <nav class="header-nav">
         <ul class="nav-tabs">
-          <li><a href="#menu-section">Menu</a></li>
-          <li><a href="#reviews-section">Reviews</a></li>
-          <li><a href="#about-section">About</a></li>
+          <li><a href="#menu-section"><span data-lang="en">Menu</span><span data-lang="ar">القائمة</span></a></li>
+          <li><a href="#reviews-section"><span data-lang="en">Reviews</span><span data-lang="ar">المراجعات</span></a></li>
+          <li><a href="#about-section"><span data-lang="en">About</span><span data-lang="ar">حول</span></a></li>
         </ul>
         <div class="nav-indicator"></div>
       </nav>
+      <div class="lang-switcher">
+        <button id="lang-en" class="lang-btn active"><span data-lang="en">English</span><span data-lang="ar">الإنجليزية</span></button>
+        <button id="lang-ar" class="lang-btn"><span data-lang="en">Arabic</span><span data-lang="ar">العربية</span></button>
+      </div>
     </div>
 
     <div id="menu-section">
       <div class="menu-container">
+        <h2><span data-lang="en">Menu</span><span data-lang="ar">القائمة</span></h2>
         <div class="menu-section-nav">
           <button class="menu-section-tab active" data-target="food-content">
             <svg
@@ -44,7 +50,7 @@
                 d="M24.5 16v32M40.5 16v32M21 24c-5.22 0-6.23 4.33-2 6.66 4.67 2.67 9.33-1.33 9.33-6.66S26.22 16 21 16zM46 24c5.22 0 6.23 4.33 2 6.66-4.67 2.67-9.33-1.33-9.33-6.66S40.78 16 46 16zM32.5 12c-12 0-16 30 0 40 16-10 12-40 0-40z"
               />
             </svg>
-            <span class="cat-text">Food</span>
+            <span class="cat-text"><span data-lang="en">Food</span><span data-lang="ar">طعام</span></span>
           </button>
           <button class="menu-section-tab" data-target="beverages-content">
             <svg
@@ -60,7 +66,7 @@
               <path d="M32 36v16M22 52h20" />
               <path d="M44 12s2 3 0 6-4 1-4-2" />
             </svg>
-            <span class="cat-text">Beverages</span>
+            <span class="cat-text"><span data-lang="en">Beverages</span><span data-lang="ar">مشروبات</span></span>
           </button>
           <button class="menu-section-tab" data-target="tobacco-content">
             <svg
@@ -76,7 +82,7 @@
                 d="M12 36h40v-8H12zm40-4c6.63 0 10-4 10-4s-3.37-4-10-4M16 18s2.67-4 8-4M16 24s2.67-4 8-4"
               />
             </svg>
-            <span class="cat-text">Tobacco</span>
+            <span class="cat-text"><span data-lang="en">Tobacco</span><span data-lang="ar">تبغ</span></span>
           </button>
         </div>
 
@@ -85,330 +91,333 @@
             <button class="scroll-btn left">‹</button>
             <div class="category-nav">
               <button class="category-tab active" data-target="cat-cold-messa">
-                Cold Messa
+                <span data-lang="en">Cold Messa</span><span data-lang="ar">مقبلات باردة</span>
               </button>
               <button class="category-tab" data-target="cat-hot-messa">
-                Hot Messa
+                <span data-lang="en">Hot Messa</span><span data-lang="ar">مقبلات ساخنة</span>
               </button>
               <button class="category-tab" data-target="cat-nayeh">
-                Nayeh
+                <span data-lang="en">Nayeh</span><span data-lang="ar">نيئة</span>
               </button>
               <button class="category-tab" data-target="cat-salata">
-                Salata
+                <span data-lang="en">Salata</span><span data-lang="ar">سلطة</span>
               </button>
               <button class="category-tab" data-target="cat-mashewe">
-                Mashewe
+                <span data-lang="en">Mashewe</span><span data-lang="ar">مشاوي</span>
               </button>
               <button class="category-tab" data-target="cat-light-section">
-                Light Section
+                <span data-lang="en">Light Section</span><span data-lang="ar">قسم خفيف</span>
               </button>
             </div>
             <button class="scroll-btn right">›</button>
           </div>
           <div class="category-content-container">
             <div id="cat-cold-messa" class="category-content">
-              <h3 class="category-display-title">Cold Messa</h3>
+              <h3 class="category-display-title">
+                <span data-lang="en">Cold Messa</span><span data-lang="ar">مقبلات باردة</span>
+              </h3>
+              <h3 class="category-display-title"><span data-lang="en">Cold Messa</span><span data-lang="ar">مقبلات باردة</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Hommos</span>
+                  <span class="item-name"><span data-lang="en">Hommos</span><span data-lang="ar">حمص</span></span>
                 </div>
                 <span class="item-price">3.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Hommos ras asfour</span>
+                  <span class="item-name"><span data-lang="en">Hommos ras asfour</span><span data-lang="ar">حمص راس عصفور</span></span>
                 </div>
                 <span class="item-price">9.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Moutabal</span>
+                  <span class="item-name"><span data-lang="en">Moutabal</span><span data-lang="ar">متبل</span></span>
                 </div>
                 <span class="item-price">3.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Baba Ghanouj</span>
+                  <span class="item-name"><span data-lang="en">Baba Ghanouj</span><span data-lang="ar">بابا غنوج</span></span>
                 </div>
                 <span class="item-price">3.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Labneh</span>
+                  <span class="item-name"><span data-lang="en">Labneh</span><span data-lang="ar">لبنة</span></span>
                 </div>
                 <span class="item-price">4.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Labneh Bi Toum</span>
+                  <span class="item-name"><span data-lang="en">Labneh Bi Toum</span><span data-lang="ar">لبنة بالثوم</span></span>
                 </div>
                 <span class="item-price">5.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Jebneh Baladi</span>
+                  <span class="item-name"><span data-lang="en">Jebneh Baladi</span><span data-lang="ar">جبنة بلدي</span></span>
                 </div>
                 <span class="item-price">4.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Makdous</span>
+                  <span class="item-name"><span data-lang="en">Makdous</span><span data-lang="ar">مكدوس</span></span>
                 </div>
                 <span class="item-price">3.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Warak enab bi zeit</span>
+                  <span class="item-name"><span data-lang="en">Warak enab bi zeit</span><span data-lang="ar">ورق عنب بالزيت</span></span>
                 </div>
                 <span class="item-price">3.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kabis</span>
+                  <span class="item-name"><span data-lang="en">Kabis</span><span data-lang="ar">كبيس</span></span>
                 </div>
                 <span class="item-price">3.50 $</span>
               </div>
             </div>
             <div id="cat-hot-messa" class="category-content">
-              <h3 class="category-display-title">Hot Messa</h3>
+              <h3 class="category-display-title"><span data-lang="en">Hot Messa</span><span data-lang="ar">مقبلات ساخنة</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Makanek</span>
+                  <span class="item-name"><span data-lang="en">Makanek</span><span data-lang="ar">مقانق</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Sawda djej</span>
+                  <span class="item-name"><span data-lang="en">Sawda djej</span><span data-lang="ar">سودة دجاج</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Jwenih djej</span>
+                  <span class="item-name"><span data-lang="en">Jwenih djej</span><span data-lang="ar">جوانح دجاج</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Soujok</span>
+                  <span class="item-name"><span data-lang="en">Soujok</span><span data-lang="ar">سجق</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kebbeh Meklieh</span>
+                  <span class="item-name"><span data-lang="en">Kebbeh Meklieh</span><span data-lang="ar">كبة مقلية</span></span>
                 </div>
                 <span class="item-price">8.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Sanbousik</span>
+                  <span class="item-name"><span data-lang="en">Sanbousik</span><span data-lang="ar">سمبوسك</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Rekakat Jebneh</span>
+                  <span class="item-name"><span data-lang="en">Rekakat Jebneh</span><span data-lang="ar">رقاقات جبنة</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Mouajanat Mchakal</span>
+                  <span class="item-name"><span data-lang="en">Mouajanat Mchakal</span><span data-lang="ar">معجنات مشكلة</span></span>
                 </div>
                 <span class="item-price">9.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Batata Mekleih</span>
+                  <span class="item-name"><span data-lang="en">Batata Mekleih</span><span data-lang="ar">بطاطا مقلية</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Batata Meshwieh</span>
+                  <span class="item-name"><span data-lang="en">Batata Meshwieh</span><span data-lang="ar">بطاطا مشوية</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Batata bi Kezebra</span>
+                  <span class="item-name"><span data-lang="en">Batata bi Kezebra</span><span data-lang="ar">بطاطا بالكزبرة</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
             </div>
             <div id="cat-nayeh" class="category-content">
-              <h3 class="category-display-title">Nayeh</h3>
+              <h3 class="category-display-title"><span data-lang="en">Nayeh</span><span data-lang="ar">نيئة</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kebbeh Nayeh</span>
+                  <span class="item-name"><span data-lang="en">Kebbeh Nayeh</span><span data-lang="ar">كبة نية</span></span>
                 </div>
                 <span class="item-price">1.234 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Tebleh Nayeh</span>
+                  <span class="item-name"><span data-lang="en">Tebleh Nayeh</span><span data-lang="ar">تبلة نية</span></span>
                 </div>
                 <span class="item-price">1.234 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Sawda Nayeh</span>
+                  <span class="item-name"><span data-lang="en">Sawda Nayeh</span><span data-lang="ar">سودة نية</span></span>
                 </div>
                 <span class="item-price">1.234 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Lahmeh Nayeh</span>
+                  <span class="item-name"><span data-lang="en">Lahmeh Nayeh</span><span data-lang="ar">لحمة نية</span></span>
                 </div>
                 <span class="item-price">1.234 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Sawda Nayeh</span>
+                  <span class="item-name"><span data-lang="en">Sawda Nayeh</span><span data-lang="ar">سودة نية</span></span>
                 </div>
                 <span class="item-price">1.234 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Lawha Nayeh</span>
+                  <span class="item-name"><span data-lang="en">Lawha Nayeh</span><span data-lang="ar">لوحة نية</span></span>
                 </div>
                 <span class="item-price">1.234 $</span>
               </div>
             </div>
             <div id="cat-salata" class="category-content">
-              <h3 class="category-display-title">Salata</h3>
+              <h3 class="category-display-title"><span data-lang="en">Salata</span><span data-lang="ar">سلطة</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Tabbouleh</span>
+                  <span class="item-name"><span data-lang="en">Tabbouleh</span><span data-lang="ar">تبولة</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Fattouch</span>
-                  <span class="item-description">With onions & tomato</span>
+                  <span class="item-name"><span data-lang="en">Fattouch</span><span data-lang="ar">فتوش</span></span>
+                  <span class="item-description"><span data-lang="en">With onions & tomato</span><span data-lang="ar">مع بصل و بندورة</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Salata Arabia</span>
+                  <span class="item-name"><span data-lang="en">Salata Arabia</span><span data-lang="ar">سلطة عربية</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Rocca Zaatar</span>
+                  <span class="item-name"><span data-lang="en">Rocca Zaatar</span><span data-lang="ar">جرجير و زعتر</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Rocca w Chamandar</span>
+                  <span class="item-name"><span data-lang="en">Rocca w Chamandar</span><span data-lang="ar">جرجير و شمندر</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Jat Khodra</span>
+                  <span class="item-name"><span data-lang="en">Jat Khodra</span><span data-lang="ar">سلطة خضرة</span></span>
                 </div>
                 <span class="item-price">15.00 $</span>
               </div>
             </div>
             <div id="cat-mashewe" class="category-content">
-              <h3 class="category-display-title">Mashewe</h3>
+              <h3 class="category-display-title"><span data-lang="en">Mashewe</span><span data-lang="ar">مشاوي</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Farouj Meshwe</span>
+                  <span class="item-name"><span data-lang="en">Farouj Meshwe</span><span data-lang="ar">فروج مشوي</span></span>
                 </div>
                 <span class="item-price">13.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kebbeh eras Dehneh</span>
+                  <span class="item-name"><span data-lang="en">Kebbeh eras Dehneh</span><span data-lang="ar">كبة رأس دهنة</span></span>
                 </div>
                 <span class="item-price">6.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kebbeh eras Lahmeh</span>
+                  <span class="item-name"><span data-lang="en">Kebbeh eras Lahmeh</span><span data-lang="ar">كبة رأس لحمة</span></span>
                 </div>
                 <span class="item-price">7.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Mashewe Mshakal (1kg)</span>
+                  <span class="item-name"><span data-lang="en">Mashewe Mshakal (1kg)</span><span data-lang="ar">مشاوي مشكلة (١ كغ)</span></span>
                 </div>
                 <span class="item-price">33.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Lahmeh Meshwieh (1kg)</span>
+                  <span class="item-name"><span data-lang="en">Lahmeh Meshwieh (1kg)</span><span data-lang="ar">لحمة مشوية (١ كغ)</span></span>
                 </div>
                 <span class="item-price">38.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kafta Meshwieh (1kg)</span>
+                  <span class="item-name"><span data-lang="en">Kafta Meshwieh (1kg)</span><span data-lang="ar">كفتة مشوية (١ كغ)</span></span>
                 </div>
                 <span class="item-price">30.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Tawouk Meshweh (1kg)</span>
+                  <span class="item-name"><span data-lang="en">Tawouk Meshweh (1kg)</span><span data-lang="ar">دجاج مشوي (١ كغ)</span></span>
                 </div>
                 <span class="item-price">30.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Fwerigh</span>
+                  <span class="item-name"><span data-lang="en">Fwerigh</span><span data-lang="ar">فوارغ</span></span>
                 </div>
                 <span class="item-price">19.00 $</span>
               </div>
             </div>
             <div id="cat-light-section" class="category-content">
-              <h3 class="category-display-title">Light Section</h3>
+              <h3 class="category-display-title"><span data-lang="en">Light Section</span><span data-lang="ar">قسم خفيف</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Kebbeh Eras high Fiber</span>
+                  <span class="item-name"><span data-lang="en">Kebbeh Eras high Fiber</span><span data-lang="ar">كبة رأس ألياف عالية</span></span>
                 </div>
                 <span class="item-price">8.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Warak Enab High protein</span>
+                  <span class="item-name"><span data-lang="en">Warak Enab High protein</span><span data-lang="ar">ورق عنب عالي البروتين</span></span>
                 </div>
                 <span class="item-price">5.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">The healthiest Tabbouleh</span>
+                  <span class="item-name"><span data-lang="en">The healthiest Tabbouleh</span><span data-lang="ar">الثابوبله الصحية</span></span>
                 </div>
                 <span class="item-price">9.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">The Healthiest Fattouch</span>
+                  <span class="item-name"><span data-lang="en">The Healthiest Fattouch</span><span data-lang="ar">الفطوش الصحية</span></span>
                 </div>
                 <span class="item-price">9.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Light Kabkoubeh</span>
+                  <span class="item-name"><span data-lang="en">Light Kabkoubeh</span><span data-lang="ar">كبة خفيفة</span></span>
                 </div>
                 <span class="item-price">9.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Ultra light Rekakat Jebneh</span>
+                  <span class="item-name"><span data-lang="en">Ultra light Rekakat Jebneh</span><span data-lang="ar">rekakat Jebneh خفيفة</span></span>
                 </div>
                 <span class="item-price">8.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Light powerful Sanbousik</span>
+                  <span class="item-name"><span data-lang="en">Light powerful Sanbousik</span><span data-lang="ar">سانبوسك خفيف</span></span>
                 </div>
                 <span class="item-price">8.00 $</span>
               </div>
@@ -417,93 +426,94 @@
         </div>
 
         <div id="beverages-content" class="menu-section-content">
+  <h3 class="category-display-title"><span data-lang="en">Beverages</span><span data-lang="ar">مشروبات</span></h3>
           <div class="category-nav-container">
             <button class="scroll-btn left">‹</button>
             <div class="category-nav">
               <button class="category-tab active" data-target="cat-alcohol">
-                Alcohol
-              </button>
+  <span data-lang="en">Alcohol</span><span data-lang="ar">مشروبات كحولية</span>
+</button>
               <button class="category-tab" data-target="cat-soft-drinks">
-                Soft Drinks
+                <span data-lang="en">Soft Drinks</span><span data-lang="ar">مشروبات غازية</span>
               </button>
             </div>
             <button class="scroll-btn right">›</button>
           </div>
           <div class="category-content-container">
             <div id="cat-alcohol" class="category-content">
-              <h3 class="category-display-title">Alcohol</h3>
+              <h3 class="category-display-title"><span data-lang="en">Alcohol</span><span data-lang="ar">مشروبات كحولية</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Whisky (Black label)</span>
+                  <span class="item-name"><span data-lang="en">Whisky (Black label)</span><span data-lang="ar">ويسكي (بلاك ليبل)</span></span>
                 </div>
                 <span class="item-price">40.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Whisky (Red label)</span>
+                  <span class="item-name"><span data-lang="en">Whisky (Red label)</span><span data-lang="ar">ويسكي (ريد ليبل)</span></span>
                 </div>
                 <span class="item-price">28.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Whisky (Chivas)</span>
+                  <span class="item-name"><span data-lang="en">Whisky (Chivas)</span><span data-lang="ar">ويسكي (شيفا)</span></span>
                 </div>
                 <span class="item-price">30.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Red Wine (Reserve de Couvent)</span>
+                  <span class="item-name"><span data-lang="en">Red Wine (Reserve de Couvent)</span><span data-lang="ar">نبيذ أحمر (Reserve de Couvent)</span></span>
                 </div>
                 <span class="item-price">12.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">White Wine (Blanc de Blanc)</span>
+                  <span class="item-name"><span data-lang="en">White Wine (Blanc de Blanc)</span><span data-lang="ar">نبيذ أبيض (Blanc de Blanc)</span></span>
                 </div>
                 <span class="item-price">14.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Rose Wine (Sunset)</span>
+                  <span class="item-name"><span data-lang="en">Rose Wine (Sunset)</span><span data-lang="ar">نبيذ حمراء (Sunset)</span></span>
                 </div>
                 <span class="item-price">14.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Arak baladi</span>
+                  <span class="item-name"><span data-lang="en">Arak baladi</span><span data-lang="ar">عرق بلدي</span></span>
                 </div>
                 <span class="item-price">14.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Vodka (Stoli)</span>
+                  <span class="item-name"><span data-lang="en">Vodka (Stoli)</span><span data-lang="ar">فودكا (Stoli)</span></span>
                 </div>
                 <span class="item-price">20.00 $</span>
-              </div>
+              </div
             </div>
             <div id="cat-soft-drinks" class="category-content">
-              <h3 class="category-display-title">Soft Drinks</h3>
+              <h3 class="category-display-title"><span data-lang="en">Soft Drinks</span><span data-lang="ar">مشروبات غازية</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Sodas</span>
+                  <span class="item-name"><span data-lang="en">Sodas</span><span data-lang="ar">صودا</span></span>
                 </div>
                 <span class="item-price">1.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Water</span>
+                  <span class="item-name"><span data-lang="en">Water</span><span data-lang="ar">ماء</span></span>
                 </div>
                 <span class="item-price">1.50 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Almaza Beer</span>
+                  <span class="item-name"><span data-lang="en">Almaza Beer</span><span data-lang="ar">بيرة ألماظة</span></span>
                 </div>
                 <span class="item-price">4.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Mexican Beer</span>
+                  <span class="item-name"><span data-lang="en">Mexican Beer</span><span data-lang="ar">بيرة مكسيكية</span></span>
                 </div>
                 <span class="item-price">5.00 $</span>
               </div>
@@ -512,27 +522,28 @@
         </div>
 
         <div id="tobacco-content" class="menu-section-content">
+  <h3 class="category-display-title"><span data-lang="en">Tobacco</span><span data-lang="ar">تبغ</span></h3>
           <div class="category-nav-container">
             <button class="scroll-btn left">‹</button>
             <div class="category-nav">
               <button class="category-tab active" data-target="cat-arghileh">
-                Arghileh Mouassal
+                <span data-lang="en">Arghileh Mouassal</span><span data-lang="ar">أرجيلة موصل</span>
               </button>
             </div>
             <button class="scroll-btn right">›</button>
           </div>
           <div class="category-content-container">
             <div id="cat-arghileh" class="category-content">
-              <h3 class="category-display-title">Arghileh Mouassal</h3>
+              <h3 class="category-display-title"><span data-lang="en">Arghileh Mouassal</span><span data-lang="ar">أرجيلة موصل</span></h3>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Hamoud w naanaa</span>
+                  <span class="item-name"><span data-lang="en">Hamoud w naanaa</span><span data-lang="ar">حمود و نعناع</span></span>
                 </div>
                 <span class="item-price">5.00 $</span>
               </div>
               <div class="menu-item">
                 <div class="item-details">
-                  <span class="item-name">Tefehten</span>
+                  <span class="item-name"><span data-lang="en">Tefehten</span><span data-lang="ar">تفحتين</span></span>
                 </div>
                 <span class="item-price">5.00 $</span>
               </div>
