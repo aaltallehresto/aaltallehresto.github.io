@@ -28,6 +28,32 @@ body {
   padding: 8px 16px 4px 16px;
   border-bottom: 1px solid var(--border-color);
 }
+
+.lang-switcher {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 8px auto 0 auto;
+}
+.lang-btn {
+  flex: 1;
+  padding: 6px 0;
+  border: none;
+  background: #e8e6e3;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-btn.active {
+  background: var(--primary-red);
+  color: #fff;
+  font-weight: bold;
+}
+.lang-btn:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
 .logo {
   display: flex;
   align-items: center;
